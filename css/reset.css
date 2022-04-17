@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+p{
+    font-size:25px;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+}
