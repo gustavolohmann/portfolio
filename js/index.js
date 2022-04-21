@@ -15,11 +15,11 @@ function progressBars() {
                 count++;
                 if (count <= 30) {
                     progress_1.style.width = count + "%";
-                    progress_1.innerHTML = count + "%"
+                    progress_1.innerHTML = count + "%";
                 } else if (count == 30) {
                     clearInterval(time)
                 }
-            }, .5000);
+            }, .100);
 
             let loatTimeMiddle = setInterval(() => {
                 if (count <= 50) {
@@ -28,20 +28,20 @@ function progressBars() {
                 } else if (count == 500) {
                     clearInterval(loatTimeMiddle)
                 }
-            }, .5000);
+            }, .100);
 
             let loatTimeLast = setInterval(() => {
                 if (count <= 25) {
                     progress_3.style.width = count + "%";
                     progress_3.innerHTML = count + "%";
                 } else if (count == 25) {
-                    clearInterval(loatTimeMiddle)
+                    clearInterval(loatTimeLast)
                 }
-            }, .5000);
+            }, .100);
 
         }, 1000);
 
-    }, .1000);
+    }, 1000);
 
 }
 progressBars();
@@ -51,23 +51,40 @@ const sobre = document.querySelector(".sobre");
 const contato = document.querySelector(".contacts");
 const projetos = document.querySelector(".projetos");
 
+
+
 function selectMenu() {
 
-
     sobre.addEventListener("click", () => {
-        window.scrollTo(0, 500);
+        window.scrollTo({
+            top: 400,
+            behavior: 'smooth',
+        });
+        /*
+        Falta fazer o scroll de volta dos dos menus 
+        subtraindo o valor atual pelo valor de volta
+        */
     });
+
     projetos.addEventListener("click", () => {
-        window.scrollTo(0, 1500);
+        window.scrollTo({
+            top: 1150,
+            behavior: 'smooth',
+        });
     });
     contato.addEventListener("click", () => {
-        window.scrollTo(0, 2000);
+        window.scrollTo({
+            top: 1700,
+            behavior: 'smooth',
+        });
+
     });
-
-
 }
 
 selectMenu();
+
+
+
 
 
 

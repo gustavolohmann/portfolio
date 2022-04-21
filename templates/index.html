@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <title>Meu portfolio</title>
 </head>
@@ -18,71 +19,98 @@
 <body>
     <header>
         <div class="menu_inicial">
-            <h1 id="titulo_principal">Gustavo Lohmann Linz</h1>
-
-            <button class="sobre">sobre</button>
-            <button class="projetos">projetos</button>
-            <button class="contacts">contato</button>
-
+            <div class="principal_title">
+                <h1 id="titulo_principal">Gustavo Lohmann Linz</h1>
+            </div>
+            <div class="list_menu">
+                <ul>
+                    <li>
+                        <button class="sobre">sobre</button>
+                    </li>
+                    <li>
+                        <button class="projetos">projetos</button>
+                    </li>
+                    <li>
+                        <button class="contacts">contato</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <!--fim do header-->
-
-    <section>
-        <div class="apresentacao">
-            <h1 id="Conhecimentos">Conhecimentos</h1>
-            <div class="WhatDoIdo">
-                <p>JavaScript e php</p>
-                <div id="skill" class="alert_1"></div>
-                <p>Html e css</p>
-                <div id="skill" class="alert_2"></div>
-                <p>Banco de dados Mysql</p>
-                <div id="skill" class="alert_3"></div>
-
+    <main>
+        <section class="section_principal">
+            <div class="apresentacao">
+                <div class="WhatDoIdo">
+                    <h1 id="conhecimentos">Conhecimentos</h1>
+                    <div class="ancora">
+                        <div class="progresso">
+                            <div class="categoria">
+                                <p id="habi">JavaScript e php</p>
+                                <p id="habi">Html e css</p>
+                                <p id="habi">Banco de dados Mysql</p>
+                            </div>
+                            <div class="bar_skill">
+                                <div id="skill" class="alert_1"></div>
+                                <div id="skill" class="alert_2"></div>
+                                <div id="skill" class="alert_3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="WhoIam">
+                    <h1>Quem sou eu ?</h1>
+                    <p style="letter-spacing: 5px">Estudante de programação apaixonado por tecnologia, programando desde
+                        dos
+                        meus 19 anos de idade,o que
+                        começou por pura curiosidade acabou se transformando na minha carreira.
+                    </p>
+                </div>
+                <div class="MyExperience">
+                    <h1>Vamos trabalhar juntos ?</h1>
+                    <p style="letter-spacing: 5px">
+                        Estou buscando pessoas ou empresas que precisem de programadores para as suas ideias, ou
+                        projetos em
+                        andamento acredito no hard work, o seu site ou projeto feito a mão com a melhor qualidade que um
+                        Programador pode entregar.
+                    </p>
+                </div>
             </div>
-
-            <div class="WhoIam">
-                <h1>Quem sou eu ?</h1>
-                <p style="letter-spacing: 5px">Estudante de programação apaixonado por tecnologia, programando desde dos meus 19 anos de idade,o que
-                    começou por pura curiosidade acabou se transformando na minha carreira.
-                </p>
+        </section>
+        <!--fim da sectio-->
+        <section class="section_produtos">
+            <header>
+                <h1 class="titulo_produto">Produtos já criados </h1>
+            </header>
+            <div class="img-projeto">
+                <div class="img_apresentacao">
+                    <img id="img_projeto_" src="../img/home.png" alt="home">
+                    <img id="img_projeto_" src="../img/portfolio.png" alt="portfolio">
+                </div>
+                <div class="lista_tecnologia">
+                    <ul>
+                        <h2 id="tec_usadas">Tecnologias usadas</h2>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PROJETO DE APRENDIZADO.</li>
+                    </ul>
+                </div>
             </div>
-
-
-            <div class="MyExperience">
-                <h1>Vamos trabalhar juntos ?</h1>
-                <p style="letter-spacing: 5px">
-                    Estou buscando pessoas ou empresas que precisem de programadores para as suas ideias, ou projetos em
-                    andamento acredito no hard work, o seu site ou projeto feito a mão com a melhor qualidade que um
-                    Programador pode entregar.
-                </p>
+            <!--fim imf_projeto-->
+        </section>
+        <section class="section_contato">
+            <header>
+                <h2 class="contato_titulo">Entre em contato</h2>
+            </header>
+            <div class="contato">
+                <p><i class="fa-brands fa-whatsapp"></i>19-995604044</p>
+                <p><i class="fa-solid fa-envelope"></i>gustavolohmannlinz@gmail.com</p>
             </div>
-
-        </div>
-    </section>
-    <!--fim da sectio-->
-
-    <h1 class="titulo_produto">Produtos já criados </h1>
-    <div class="img-projeto">
-        <ul>
-        <h2 id="tec_usadas">Tecnologias usadas</h2>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PROJETO DE APRENDIZADO.</li>
-        </ul>
-        <img id="img_projeto_" src="../img/home.png" alt="home">
-        <img id="img_projeto_" src="../img/portfolio.png" alt="portfolio">
-    </div>
-    <!--fim imf_projeto-->
-
-    <h2 class="contato_titulo">Entre em contato</h2>
-    <div class="contato">
-        <p><i class="fa-brands fa-whatsapp"></i>19 - 9 9 5 6 0 4 0 4 4</p>
-        <p style="letter-spacing: 5px"><i class="fa-solid fa-envelope"></i>gustavolohmannlinz@gmail.com</p>
-    </div>
-    <!--fim contato-->
-
+        </section>
+        <!--fim contato-->
+    </main>
+    <!--fim do main-->
     <footer>
         <div class="rodape">
             <ul>
