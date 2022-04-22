@@ -1,1 +1,234 @@
+/*Abaixo de 1114px*/
+@media(max-width:1114px) {
+    .list_menu {
+        margin: 0 auto;
+    }
+
+    #titulo_principal {
+        display: none;
+    }
+}
+/*-----------------*/
+@media(max-width:768px) {
+    body{
+        padding: 0;
+    }
+    .menu_inicial{
+        display: none;
+    }
+   /*tecnoloias usadas*/
+    .lista_tecnologia{
+        position: absolute;
+        background-color: #000;
+        height: 100%;
+        opacity: 0;
+        z-index: 1000;
+    }
+    .animation_lista{
+        animation:animation_Lista_tecnologia .3s forwards;
+    }
+    @keyframes animation_Lista_tecnologia {
+        to{
+            opacity: 1;
+        }
+    }
+    /*button que esconde as tecnologias que foi usado*/
+    .hidden_tec_btn{
+        position: relative;
+        top:200px;
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        color: skyblue;
+        font-size: 15px;
+        cursor: pointer;
+        border: 1px solid skyblue;
+        border-radius: 50px;
+        z-index: 1000;
+    }
+    /*hidden menu*/
+    .list_hidden{
+        position: absolute;
+        left: 100%;
+        transform: translate(-100%);
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        color: skyblue;
+        font-size: 15px;
+        cursor: pointer;
+        border: 1px solid skyblue;
+        border-radius: 50px;
+    }
+}
+
+
+@media(min-width:768px) {
+    .list_hidden,
+    .hidden_tec_btn{
+        display: none;
+    }
+}
+
+
+
+@media(max-width:699px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        height: 100%;
+        top: 0;
+        
+    }
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar_skill{
+        display: none;
+    }
+    .contato p{
+        font-size:20px;
+    }
+}
+@media(max-width:560px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        height: 100%;
+        top: 0;
+        
+    }
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar_skill{
+        display: none;
+    }
+    .contato p{
+        font-size:20px;
+    }
+}
+
+/*Abaixo de 500px*/
+@media(max-width:500px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        height: 100%;
+        top: 0;
+        
+    }
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar_skill{
+        display: none;
+    }
+    .contato p{
+        font-size:20px;
+    }
+}
+
+@media(max-width:450px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        height: 100%;
+        top: 0;
+        
+    }
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar_skill{
+        display: none;
+    }
+    .contato p{
+        font-size:20px;
+    }
+}
+
+@media(max-width:458px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        height: 100%;
+        top: 0;
+        
+    }
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar_skill{
+        display: none;
+    }
+    .contato p{
+        font-size:20px;
+    }
+}
 

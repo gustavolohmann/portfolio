@@ -47,28 +47,42 @@ function progressBars() {
 progressBars();
 
 /*CLICANOD EM UMA DOS BUTTONS VOCÊ E DRIRECIONADO PARA A SECAÇÃO*/
+const btnUp = document.querySelector(".up_to");
 const sobre = document.querySelector(".sobre");
 const contato = document.querySelector(".contacts");
 const projetos = document.querySelector(".projetos");
 
+function verificationScroll(){
+    if(window.pageYOffset > 100){
 
+        btnUp.style.display = "block";
+
+    }else{
+
+        btnUp.style.display = "none";
+    }
+}
+window.addEventListener("scroll",verificationScroll);
 
 function selectMenu() {
+    btnUp.addEventListener("click", () => {
+       
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
 
     sobre.addEventListener("click", () => {
         window.scrollTo({
-            top: 400,
+            top: 250,
             behavior: 'smooth',
         });
-        /*
-        Falta fazer o scroll de volta dos dos menus 
-        subtraindo o valor atual pelo valor de volta
-        */
     });
 
     projetos.addEventListener("click", () => {
         window.scrollTo({
-            top: 1150,
+            top: 900,
             behavior: 'smooth',
         });
     });
