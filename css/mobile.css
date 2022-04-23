@@ -8,34 +8,39 @@
         display: none;
     }
 }
+
 /*-----------------*/
 @media(max-width:768px) {
-    body{
+    body {
         padding: 0;
     }
-    .menu_inicial{
+
+    .menu_inicial {
         display: none;
     }
-   /*tecnoloias usadas*/
-    .lista_tecnologia{
+
+    /*tecnoloias usadas*/
+    .lista_tecnologia {
         position: absolute;
         background-color: #000;
         height: 100%;
-        top: 1575px;
         opacity: 0;
     }
-    .animation_lista{
-        animation:animation_Lista_tecnologia .3s forwards;
+
+    .animation_lista {
+        animation: animation_Lista_tecnologia .3s forwards;
     }
+
     @keyframes animation_Lista_tecnologia {
-        to{
+        to {
             opacity: 1;
         }
     }
+
     /*button que esconde as tecnologias que foi usado*/
-    .hidden_tec_btn{
+    .hidden_tec_btn {
         position: relative;
-        top:200px;
+        top: 200px;
         width: 50px;
         height: 50px;
         background-color: #000;
@@ -46,8 +51,9 @@
         border-radius: 50px;
         z-index: 1000;
     }
+
     /*hidden menu*/
-    .list_hidden{
+    .list_hidden {
         position: absolute;
         left: 100%;
         transform: translate(-100%);
@@ -60,33 +66,38 @@
         border: 1px solid skyblue;
         border-radius: 50px;
     }
+
 }
 
 
 @media(min-width:768px) {
+
     .list_hidden,
-    .hidden_tec_btn{
+    .hidden_tec_btn {
         display: none;
     }
 }
 
 @media(max-width:699px) {
-    body{
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         height: 100%;
         top: 0;
-        
+
     }
-    .menu_inicial{
+
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -94,30 +105,36 @@
         flex-direction: column;
         align-items: center;
     }
-    .bar_skill{
+
+    .bar_skill {
         display: none;
     }
-    .contato p{
-        font-size:20px;
+
+    .contato p {
+        font-size: 20px;
     }
 }
+
 @media(max-width:560px) {
-    body{
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         height: 100%;
         top: 0;
-        
+
     }
-    .menu_inicial{
+
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -125,32 +142,37 @@
         flex-direction: column;
         align-items: center;
     }
-    .bar_skill{
+
+    .bar_skill {
         display: none;
     }
-    .contato p{
-        font-size:20px;
+
+    .contato p {
+        font-size: 20px;
     }
 }
 
 /*Abaixo de 500px*/
 @media(max-width:500px) {
-    body{
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         height: 100%;
         top: 0;
-        
+
     }
-    .menu_inicial{
+
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -158,31 +180,36 @@
         flex-direction: column;
         align-items: center;
     }
-    .bar_skill{
+
+    .bar_skill {
         display: none;
     }
-    .contato p{
-        font-size:20px;
+
+    .contato p {
+        font-size: 20px;
     }
 }
 
 @media(max-width:450px) {
-    body{
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         height: 100%;
         top: 0;
-        
+
     }
-    .menu_inicial{
+
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -190,70 +217,42 @@
         flex-direction: column;
         align-items: center;
     }
-    .bar_skill{
+
+    .bar_skill {
         display: none;
     }
-    .contato p{
-        font-size:20px;
+
+    .contato p {
+        font-size: 20px;
     }
 }
 
-@media(max-width:458px) {
-    body{
+@media(max-width:462px) {
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         height: 100%;
         top: 0;
-        
-    }
-    .menu_inicial{
-        display: none;
-    }
-    .categoria{
-        width: 100%;
-        gap: 10px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-    }
-    .bar_skill{
-        display: none;
-    }
-    .contato p{
-        font-size:20px;
-    }
-}
 
-@media(max-width:395px) {
-    body{
-        padding: 0;
-        overflow-x: hidden;
     }
-    
-    .WhatDoIdo,
-    .WhoIam,
-    .MyExperience{
-        position: relative;
-        top: 0;
-    }
+
     .WhatDoIdo p,
     .WhoIam p,
-    .MyExperience p{
+    .MyExperience p {
         font-size: 15px;
-        text-align: center;
-        height:200px;
     }
 
-    .menu_inicial{
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -261,41 +260,49 @@
         flex-direction: column;
         align-items: center;
     }
-    .contato p{
-        text-align: center;
-        font-size:13px;
+
+    .bar_skill {
+        display: none;
+    }
+
+    .contato p {
+        font-size: 20px;
     }
 }
 
 
-@media(max-width:320px) {
-    body{
+
+@media(max-width:420px) {
+    body {
         padding: 0;
         overflow-x: hidden;
     }
+
     h1,
-    h2{
-        font-size:20px ;
+    h2 {
+        font-size: 20px;
     }
-    
+
     .WhatDoIdo,
     .WhoIam,
-    .MyExperience{
+    .MyExperience {
         position: relative;
         top: 0;
     }
+
     .WhatDoIdo p,
     .WhoIam p,
-    .MyExperience p{
+    .MyExperience p {
         font-size: 15px;
         text-align: center;
-        height:200px;
+        height: 200px;
     }
 
-    .menu_inicial{
+    .menu_inicial {
         display: none;
     }
-    .categoria{
+
+    .categoria {
         width: 100%;
         gap: 10px;
         display: flex;
@@ -303,14 +310,110 @@
         flex-direction: column;
         align-items: center;
     }
-    .contato p{
+
+    .contato p {
         text-align: center;
-        font-size:10px;
+        font-size: 10px;
     }
-    .img_apresentacao{
+
+    .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
     }
 }
 
+@media(max-width:400px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience {
+        position: relative;
+        top: 0;
+    }
+
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p {
+        font-size: 15px;
+        text-align: center;
+        height: 200px;
+    }
+
+    .menu_inicial {
+        display: none;
+    }
+
+    .categoria {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato p {
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:320px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience {
+        position: relative;
+        top: 0;
+    }
+
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p {
+        font-size: 15px;
+        text-align: center;
+        height: 200px;
+    }
+
+    .menu_inicial {
+        display: none;
+    }
+
+    .categoria {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .img_apresentacao {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .lista_tecnologia {
+        top: 1570px;
+    }
+}
