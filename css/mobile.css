@@ -347,6 +347,52 @@
         align-items: center;
     }
 }
+@media(max-width:360px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience {
+        position: relative;
+        top: 0;
+    }
+
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p {
+        font-size: 15px;
+        text-align: center;
+        height: 200px;
+    }
+
+    .menu_inicial {
+        display: none;
+    }
+
+    .categoria {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img_apresentacao {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .lista_tecnologia {
+        top: 1570px;
+    }
+    .contato p{
+        text-align: center;
+        font-size: 10px;
+    }
+}
 @media(max-width:350px) {
     body {
         padding: 0;
