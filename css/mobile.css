@@ -186,7 +186,8 @@
     }
 
     .contato p {
-        font-size: 20px;
+        text-align: center;
+        font-size: 13px;
     }
 }
 
@@ -195,7 +196,10 @@
         padding: 0;
         overflow-x: hidden;
     }
-
+    h1,
+    h2 {
+        font-size: 20px;
+    }
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -223,7 +227,8 @@
     }
 
     .contato p {
-        font-size: 20px;
+        text-align: center;
+        font-size: 13px;
     }
 }
 
@@ -265,9 +270,6 @@
         display: none;
     }
 
-    .contato p {
-        font-size: 20px;
-    }
 }
 
 
@@ -277,12 +279,6 @@
         padding: 0;
         overflow-x: hidden;
     }
-
-    h1,
-    h2 {
-        font-size: 20px;
-    }
-
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -310,12 +306,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .contato p {
-        text-align: center;
-        font-size: 10px;
-    }
-
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
@@ -356,24 +346,12 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .contato p {
-        text-align: center;
-        font-size: 13px;
-    }
 }
-
-@media(max-width:320px) {
+@media(max-width:350px) {
     body {
         padding: 0;
         overflow-x: hidden;
     }
-
-    h1,
-    h2 {
-        font-size: 20px;
-    }
-
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -401,12 +379,52 @@
         flex-direction: column;
         align-items: center;
     }
+    .img_apresentacao {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 
-    .contato p {
+    .lista_tecnologia {
+        top: 1570px;
+    }
+    .contato p{
         text-align: center;
         font-size: 10px;
     }
+}
+@media(max-width:320px) {
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience {
+        position: relative;
+        top: 0;
+    }
 
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p {
+        font-size: 15px;
+        text-align: center;
+        height: 200px;
+    }
+
+    .menu_inicial {
+        display: none;
+    }
+
+    .categoria {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
