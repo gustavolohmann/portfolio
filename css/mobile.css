@@ -21,8 +21,8 @@
         position: absolute;
         background-color: #000;
         height: 100%;
+        top: 1575px;
         opacity: 0;
-        z-index: 1000;
     }
     .animation_lista{
         animation:animation_Lista_tecnologia .3s forwards;
@@ -69,8 +69,6 @@
         display: none;
     }
 }
-
-
 
 @media(max-width:699px) {
     body{
@@ -229,6 +227,90 @@
     }
     .contato p{
         font-size:20px;
+    }
+}
+
+@media(max-width:395px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        top: 0;
+    }
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p{
+        font-size: 15px;
+        text-align: center;
+        height:200px;
+    }
+
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato p{
+        text-align: center;
+        font-size:13px;
+    }
+}
+
+
+@media(max-width:320px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    h1,
+    h2{
+        font-size:20px ;
+    }
+    
+    .WhatDoIdo,
+    .WhoIam,
+    .MyExperience{
+        position: relative;
+        top: 0;
+    }
+    .WhatDoIdo p,
+    .WhoIam p,
+    .MyExperience p{
+        font-size: 15px;
+        text-align: center;
+        height:200px;
+    }
+
+    .menu_inicial{
+        display: none;
+    }
+    .categoria{
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato p{
+        text-align: center;
+        font-size:10px;
+    }
+    .img_apresentacao{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
 }
 
