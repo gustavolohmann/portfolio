@@ -3,15 +3,16 @@ h1,
 h2 {
     letter-spacing: 5px;
     font-size: 40px;
-    color: skyblue;
+    color: #87ceeb;
     cursor: pointer;
 }
 
-body{
+body {
     padding-top: 50px;
 }
-.menu_inicial{
-    position:fixed;
+
+.menu_inicial {
+    position: fixed;
     top: 0;
     background-color: #000;
     display: flex;
@@ -21,27 +22,32 @@ body{
     align-items: center;
     z-index: 1;
 }
-.list_menu{
+
+.list_menu {
     display: flex;
 }
-.list_menu ul{
+
+.list_menu ul {
     display: flex;
 }
-.list_menu ul li{
+
+.list_menu ul li {
     padding: 10px;
 }
-.list_menu ul li button{
+
+.list_menu ul li button {
     width: 200px;
     height: 50px;
     background-color: transparent;
-    color: skyblue;
+    color: #87ceeb;
     border: none;
     font-size: 20px;
     text-transform: uppercase;
     padding: 10px;
     cursor: pointer;
 }
-.list_menu ul li button:hover{
+
+.list_menu ul li button:hover {
     color: #fff;
 }
 
@@ -60,9 +66,9 @@ body{
     justify-content: center;
     text-align: center;
     width: 100%;
-    height:50vh;
+    height: 50vh;
     background-color: #1c1c1c;
-    padding: 50px 0; 
+    padding: 50px 0;
 }
 
 .WhoIam p,
@@ -73,20 +79,21 @@ body{
     padding: 0 10px;
 }
 
-.ancora{
+.ancora {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 300px;
 }
 
-.progresso{
+.progresso {
     display: flex;
     width: 100%;
     margin-top: 50px;
-    gap: 50px;    
+    gap: 50px;
 }
-.categoria{
+
+.categoria {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,10 +101,12 @@ body{
     width: 50%;
     height: 100%;
 }
-#skills{
+
+#skills {
     font-family: 'Courier New', Courier, monospace;
 }
-.bar_skill{
+
+.bar_skill {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,6 +114,7 @@ body{
     width: 50%;
     height: 100%;
 }
+
 #skill {
     width: 2px;
     height: 20px;
@@ -112,6 +122,7 @@ body{
     border-radius: 5px;
     text-align: center;
 }
+
 /*----------*/
 
 /*Produtos*/
@@ -124,37 +135,43 @@ body{
     width: 100%;
     padding: 100px;
 }
-.img_apresentacao{
+
+.img_apresentacao {
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.img_apresentacao img{
+
+.img_apresentacao img {
     width: 200px;
-    padding:0 10px;
+    padding: 0 10px;
 }
-.lista_tecnologia{
+
+.lista_tecnologia {
     display: flex;
     width: 100%;
 }
-.lista_tecnologia ul{
+
+.lista_tecnologia ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.lista_tecnologia ul li{
+
+.lista_tecnologia ul li {
     padding: 10px;
     color: #ffff;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-#tec_usadas{
+#tec_usadas {
     display: block;
     margin: 0 auto;
     height: 100px;
 }
-.titulo_produto{
+
+.titulo_produto {
     padding-top: 50px;
 }
 
@@ -166,8 +183,8 @@ body{
 /*-----------*/
 .contato_titulo {
     width: 80%;
-    border-top: 1px solid skyblue;
-    margin:0 auto;
+    border-top: 1px solid #87ceeb;
+    margin: 0 auto;
     text-align: center;
     padding-top: 50px;
 }
@@ -178,7 +195,7 @@ body{
     align-items: center;
     flex-direction: column-reverse;
     width: 100%;
-    padding:100px 0;
+    padding: 100px 0;
     letter-spacing: 5px;
 }
 
@@ -201,35 +218,146 @@ body{
 .rodape ul {
     display: flex;
     gap: 10px;
-    color: skyblue;
+    color: #87ceeb;
 }
 
 .rodape ul li a {
     font-size: 30px;
-    color: skyblue;
+    color: #87ceeb;
     cursor: pointer;
 }
-.up_to{
+
+.up_to {
     position: fixed;
     bottom: 50px;
     left: 20px;
-    border: 1px solid skyblue;
-    border-radius:50px;
-    border: 1px solid skyblue;
+    border: 1px solid #87ceeb;
+    border-radius: 50px;
+    border: 1px solid #87ceeb;
     width: 50px;
     height: 50px;
     cursor: pointer;
     background-color: #000;
-    color: skyblue;
+    color: #87ceeb;
     animation: animateButton .5s infinite;
 }
 
-@keyframes animateButton{
+@keyframes animateButton {
 
-    from{
-        bottom:5px;
+    from {
+        bottom: 5px;
     }
-    to{
-        bottom:10px;
+
+    to {
+        bottom: 10px;
     }
+}
+
+/*
+    mais projetos
+*/
+
+.mais_projetos {
+    position: fixed;
+    z-index: -1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(rgba(1, 1, 1, 1), rgba(1, 1, 1, 1));
+}
+
+.animation_open_modal {
+    animation: animation_open_modal .2s forwards;
+}
+
+@keyframes animation_open_modal {
+    to {
+        opacity: 1;
+        z-index: 1000;
+    }
+}
+
+.container_main_modal_projetos {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+}
+
+.modal_projetos {
+    width: 100%;
+    height: 100%;
+}
+
+.img_projetos_modal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container_fecha_modal {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+}
+
+#fecha_modal {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: #87ceeb;
+    border-radius: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.container_open_modal {
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#abre_modal_projetos {
+    width: 150px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    color: #87ceeb;
+    font-size: 25px;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+/*
+    botões de troca de imagem
+*/
+.button_change_img {
+    position: absolute;
+    z-index: -1000;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    align-content: center;
+}
+
+.button_change_img button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #87ceeb;
+    font-size: 50px;
+    cursor: pointer;
 }

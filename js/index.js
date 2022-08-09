@@ -52,21 +52,21 @@ const sobre = document.querySelector(".sobre");
 const contato = document.querySelector(".contacts");
 const projetos = document.querySelector(".projetos");
 
-function verificationScroll(){
-    if(window.pageYOffset > 100){
+function verificationScroll() {
+    if (window.pageYOffset > 100) {
 
         btnUp.style.display = "block";
 
-    }else{
+    } else {
 
         btnUp.style.display = "none";
     }
 }
-window.addEventListener("scroll",verificationScroll);
+window.addEventListener("scroll", verificationScroll);
 
 function selectMenu() {
     btnUp.addEventListener("click", () => {
-       
+
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
@@ -97,11 +97,56 @@ function selectMenu() {
 
 selectMenu();
 
+/* Abre modal de projeto*/
+
+const fecha_modal = document.getElementById("fecha_modal");
+const abre_modal_projetos = document.getElementById("abre_modal_projetos");
+const mais_projetos = document.querySelector(".mais_projetos");
+
+function openModal() {
+    mais_projetos.classList.add("animation_open_modal");
+}
+abre_modal_projetos.addEventListener("click", openModal);
 
 
+function hiddenModalProjetos() {
+    mais_projetos.classList.remove("animation_open_modal");
+
+}
+fecha_modal.addEventListener("click", hiddenModalProjetos);
 
 
+/*
+    troca de arquivos de imagem
+*/
 
 
+const img_projetos_modal = document.querySelector(".img_projetos_modal");
+
+
+const button_right_ = document.getElementById("button_right_");
+
+let count = 0;
+const obj_img_projetos = {
+    img: ["portifolio_2.png", "portifolio_3.png","portifolio_.png"],
+    change: function (count) {
+
+        img_projetos_modal.src = "../img/" + this.img[count];
+    }
+}
+obj_img_projetos.change(count);
+
+function troca_img() {
+
+    let size = obj_img_projetos.img.length;
+    count = count + 1;
+    if(count >= size){
+        count = 0;
+    }
+    obj_img_projetos.change(count);
+    
+
+}
+button_right_.addEventListener("click", troca_img);
 
 
