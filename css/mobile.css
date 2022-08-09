@@ -196,10 +196,12 @@
         padding: 0;
         overflow-x: hidden;
     }
+
     h1,
     h2 {
         font-size: 20px;
     }
+
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -279,6 +281,7 @@
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -306,6 +309,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
@@ -347,11 +351,13 @@
         align-items: center;
     }
 }
+
 @media(max-width:360px) {
     body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -379,6 +385,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
@@ -388,16 +395,19 @@
     .lista_tecnologia {
         top: 1570px;
     }
-    .contato p{
+
+    .contato p {
         text-align: center;
         font-size: 10px;
     }
 }
+
 @media(max-width:350px) {
     body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -425,6 +435,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;
@@ -434,16 +445,19 @@
     .lista_tecnologia {
         top: 1570px;
     }
-    .contato p{
+
+    .contato p {
         text-align: center;
         font-size: 10px;
     }
 }
+
 @media(max-width:320px) {
     body {
         padding: 0;
         overflow-x: hidden;
     }
+
     .WhatDoIdo,
     .WhoIam,
     .MyExperience {
@@ -471,6 +485,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .img_apresentacao {
         display: flex;
         flex-flow: row wrap;

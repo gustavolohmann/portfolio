@@ -19,8 +19,8 @@
 <body>
     <header>
         <div class="menu_inicial">
-            <div class="principal_title">
-                <h1 id="titulo_principal">Gustavo Lohmann Linz</h1>
+            <div class="container_logo">
+                <img id="logo" src="/img/logo.png">
             </div>
             <div class="list_menu">
                 <ul>
@@ -28,7 +28,7 @@
                         <button class="sobre">sobre</button>
                     </li>
                     <li>
-                        <button class="projetos">projetos</button>
+                        <button class="projetos">Tecnologias</button>
                     </li>
                     <li>
                         <button class="contacts">contato</button>
@@ -40,88 +40,68 @@
     <!--fim do header-->
     <main>
         <section class="section_principal">
-            <div class="apresentacao">
-                <div class="WhatDoIdo">
-                    <h1 id="conhecimentos">Conhecimentos</h1>
-                    <div class="ancora">
-                        <div class="progresso">
-                            <div class="categoria">
-                                <p id="habi">JavaScript e PHP</p>
-                                <p id="habi">Html e css</p>
-                                <p id="habi">Banco de dados Mysql</p>
-                            </div>
-                            <div class="bar_skill">
-                                <div id="skill" class="alert_1"></div>
-                                <div id="skill" class="alert_2"></div>
-                                <div id="skill" class="alert_3"></div>
-                            </div>
-                        </div>
+            <div class="say_hi">
+                <h1>Olá, eu sou o Gustavo</h1>
+            </div>
+            <div class="WhoIam">
+                <h1>Quem sou eu ?</h1>
+                <p>
+                    Estudante de programação apaixonado por tecnologia, programando desde
+                    dos
+                    meus 19 anos de idade,o que
+                    começou por pura curiosidade acabou se transformando na minha carreira.
+                </p>
+            </div>
+            <div class="MyExperience">
+                <h1>Vamos trabalhar juntos ?</h1>
+                <p>
+                    Estou buscando pessoas ou empresas que precisem de programadores para as suas ideias, ou
+                    projetos em
+                    andamento acredito no hard work, o seu site ou projeto feito a mão com a melhor qualidade que um
+                    Programador pode entregar.
+                </p>
+            </div>
+        </section>
+        <section class="minhas_tecnologias">
+            <div class="lista_tecnologia">
+                <div class="hidden">
+                    <button class="list_hidden"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                <h2 id="tec_usadas">Tecnologias</h2>
+                <div class="categorias">
+                    <div>
+                        <img src="../img/html.png" alt="">
+                        <label for="">HTML</label>
                     </div>
-                </div>
-                <div class="WhoIam">
-                    <h1>Quem sou eu ?</h1>
-                    <p style="letter-spacing: 5px">Estudante de programação apaixonado por tecnologia, programando desde
-                        dos
-                        meus 19 anos de idade,o que
-                        começou por pura curiosidade acabou se transformando na minha carreira.
-                    </p>
-                </div>
-                <div class="MyExperience">
-                    <h1>Vamos trabalhar juntos ?</h1>
-                    <p style="letter-spacing: 5px">
-                        Estou buscando pessoas ou empresas que precisem de programadores para as suas ideias, ou
-                        projetos em
-                        andamento acredito no hard work, o seu site ou projeto feito a mão com a melhor qualidade que um
-                        Programador pode entregar.
-                    </p>
+                    <div>
+                        <img src="../img/css-3.png" alt="">
+                        <label for="">CSS</label>
+                    </div>
+                    <div>
+                        <img src="../img/js.png" alt="">
+                        <label for="">JavaScript</label>
+                    </div>
+                    <div>
+                        <img src="../img/php.png" alt="">
+                        <label for="">PHP</label>
+                    </div>
+                    <div>
+                        <img src="../img/mysql.png" alt="">
+                        <label for="">Mysql</label>
+                    </div>
                 </div>
             </div>
         </section>
         <!--fim da sectio principal-->
         <section class="section_produtos">
-
-            <div class="btn_hidden_tec">
-                <button class="hidden_tec_btn"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-
-            <header>
-                <h1 class="titulo_produto">Produtos criados</h1>
-            </header>
-            <div class="container_open_modal">
-                <button id="abre_modal_projetos">Veja mais projetos</button>
-            </div>
-            <div class="mais_projetos">
-                <div class="button_change_img">
-                    <div>
-                        <button id="button_right_"><i class="fa-solid fa-angle-right"></i></button>
-
-                    </div>
-                </div>
-                <div class="container_fecha_modal">
-                    <button id="fecha_modal"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <div class="container_main_modal_projetos">
-                    <div class="modal_projetos">
-                        <img class="img_projetos_modal" src="" alt="imagens de projetos">
-                    </div>
-                </div>
+            <h1 class="titulo_produto">Meus Projetos</h1>
+            <div class="button-control">
+                <button id="button_left_"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="button_right_"><i class="fa-solid fa-angle-right"></i></button>
             </div>
             <div class="img-projeto">
-                <div class="img_apresentacao">
-                    <img id="img_projeto_" src="../img/home.png" alt="home">
-                    <img id="img_projeto_" src="../img/portfolio.png" alt="portfolio">
-                </div>
-                <div class="lista_tecnologia">
-                    <div class="hidden">
-                        <button class="list_hidden"><i class="fa-solid fa-arrow-left"></i></button>
-                    </div>
-                    <ul>
-                        <h2 id="tec_usadas">Tecnologias usadas</h2>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PROJETO DE APRENDIZADO</li>
-                    </ul>
+                <div class="img-projeto-second">
+                    <img class="img_projetos_modal" src="" alt="imagens de projetos">
                 </div>
             </div>
             <!--fim  section_produtos-->
