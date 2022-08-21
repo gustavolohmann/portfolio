@@ -3,16 +3,19 @@ const btn_hidden = document.querySelector(".list_hidden");
 const lista = document.querySelector(".lista_tecnologia");
 
 
-function moveAnimation(event){
-    if(event.target.classList == "hidden_tec_btn"){ 
+function moveAnimation(event) {
+    if (event.target.classList == "hidden_tec_btn") {
         lista.classList.add("animation_lista");
         btn_list.style.visibility = "hidden"
     }
 }
-btn_list.addEventListener("click", moveAnimation);
+if (btn_list) {
+    btn_list.addEventListener("click", moveAnimation);
+}
 
-function hiddenMenu(event){
-    if(event.target.classList == "list_hidden"){
+
+function hiddenMenu(event) {
+    if (event.target.classList == "list_hidden") {
         lista.classList.remove("animation_lista");
         btn_list.style.visibility = "visible";
     }

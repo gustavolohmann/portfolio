@@ -65,11 +65,13 @@ h2 {
     background: linear-gradient(rgba(109, 107, 107, 0.7), rgba(0, 0, 0, 0.7));
 
 }
-.say_hi{
-text-align: center;
-width: 100%;
-height: 100%;    
+
+.say_hi {
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
+
 .WhatDoIdo {
     display: flex;
     flex-direction: column;
@@ -137,7 +139,7 @@ height: 100%;
 }
 
 .categorias {
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -180,74 +182,32 @@ height: 100%;
 
 /*Produtos*/
 .section_produtos {
+    display: flex;
+    flex-direction: column;
     background-color: #000;
 }
-.section_produtos > .button-control{
-    padding: 20px;
-} 
-.button-control{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.button-control button{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    color: #87ceeb;
-    background-color: transparent;
-    border: 1px solid #87ceeb;
-    border-radius: 50px;
-    cursor: pointer;
-}
+
 .img-projeto {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-projeto-second{
+
+.img-projeto-second {
     display: block;
-    padding: 20px;
-
-}
-.img_projetos_modal {
-    display: block;
-    margin: 0 auto;
-    max-width:50%;
-    max-height: 50%;
-    object-fit: scale-down;   
+    padding: 10px;
 }
 
-/*
-    botões de troca de imagem
-*/
-.button_change_img {
-    position: absolute;
-    z-index: -1000;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 0 50px;
-    align-content: center;
-}
-
-.button_change_img button {
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #87ceeb;
-    font-size: 50px;
+.img-projeto-second img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 500px;
+    object-fit: contain;
     cursor: pointer;
 }
 
 /*-----------*/
-.section_contato {
-    background-color: #000;
-}
 
 .contato_titulo {
     width: 80%;
